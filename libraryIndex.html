@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="libraryStyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <form action="">
+                <table>
+                    <tr id="in">
+                        <th colspan="2"><h1>Personal Library</h1></th>
+                    </tr>
+                    <tr id="in">
+                        <td><label for="">Title:</label></td>
+                        <td><input type="text" size="30" id="title" ></td>
+                    </tr>
+                    <tr id="in">
+                        <td><label for="">Author:</label></td>
+                        <td><input type="text" size="30" id="author"></td>
+                    </tr>
+                    <tr id="in">
+                        <td><label for=""></label>Year Published:</td>
+                        <td><input type="text" size="1" id="year"></td>
+                    </tr>
+                    <tr id="in">
+                        <td><label for=""></label>Read Status:</td>
+                        <td><input type="text" size="1" id="read"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Add Book" class="btn" id="submit" onclick="addBook(event)"></td>
+                        <td><input type="submit" value="Remove Last Book" class="btn" id="btn" onclick="removeLastBook(event)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" class="btn" value="Add Book To Front" onclick="getAllTitles(event)"></td>
+                        <td><input type="submit" class="btn" value="Remove First Book" id="btn" onclick="removeFirstBook(event)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" class="btn" value="All Titles" onclick="getAllTitles(event)"></td>
+                        <td><input type="submit" class="btn" value="Book Author" id="btn" onclick="getBooksByAuthor(event)"></td>
+                    </tr>
+                </table>
+            </form>
+            <div id="new"></div>
+        </div>
+    </div>
+    <script src="libraryScript.js"></script>
+</body>
+</html>
